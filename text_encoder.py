@@ -15,7 +15,12 @@ class TextEncoder:
 
 		elif language.lower() == "eng_space":
 			return {"o": "Y", "a": "W", "t": "R", "f": "N", "w": "M", "h": "S", "l": "A", "v": "P", "y": "Q", " ": "D", "e": "H", "r": "T", "i": "G", "s": "F", "p": "I", "c": "B", "b": "V", "m": "K", "d": "C", "g": "Z", "u": "E", ".": "X", "n": "W"}
-
+		
+		elif language.lower() == "ita":
+			return {"a": "Y", "b": "W", "c": "R", "d": "N", "e": "M", "f": "S", "g": "A", "h": "P", "i": "Q", "j": "D", "k": "H", "l": "T", "m": "G", "n": "F", "o": "I", "p": "B", "q": "V", "r": "K", "s": "C", "t": "Z", "u": "E", "v": "X", "z": "W"}
+		
+		elif language.lower() == "ita_space":
+			return {"a": "Y", "b": "W", "c": "R", "d": "N", "e": "M", "f": "S", "g": "A", "h": "P", "i": "Q", "j": "D", " ": "H", "l": "T", "m": "G", "n": "F", "o": "I", "p": "B", "q": "V", "r": "K", "s": "C", "t": "Z", "u": "E", "v": "X", "z": "W"}
 
 	''' Preprocess text by removing extra whitespaces '''
 	def preprocess_text(self, text):
